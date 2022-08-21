@@ -19,11 +19,34 @@
 
 /*Global styles*/
 body {
+    background-color: var(--bgd-light-color);
     font-family: 'Roboto', 'Raleway', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--main-font-color);
     }
+ h1,
+ h2,
+ h3,
+ p {
+ margin-top: 0; 
+ margin-bottom: 0;
+}
+    
+ul,
+ol {  
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;
+}
+
+button{
+display:block;
+margin: 0 auto;
+cursor: pointer;
+border: none;
+border-radius: 4px;
+}
 
 .link,
 .link-illustration {
@@ -32,7 +55,7 @@ body {
 }
 
 .list {
-    padding: 0;
+    padding-left: 0;
     margin: 0;
     list-style: none;
 }
@@ -50,45 +73,27 @@ body {
     margin: -1px; 
 }
 
-h1,
-h2,
-h3,
-p{
-margin-top: 0;
-margin-bottom: 0;
-}
-
-ul,
-ol{
-margin-top: 0;
-margin-bottom: 0;
-padding-left: 0;
-}
-
-section{
-    display: block;
+.section{
     padding-top: 94px;
     padding-bottom: 94px;
     }
+
 img{
     display: block;
     max-width: 100%;
     height: auto;
 }
 .container{
-    margin-left: auto;
-    margin-right: auto;
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /*Header*/
 .header {
-    background-color: var(--bgd-light-color);
     border-bottom: 1px solid var(--border-line);
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .container-nav{
     display: flex;
@@ -183,6 +188,8 @@ img{
 
 .main-slogan {
     text-transform: uppercase;
+    width: 696px;
+    margin: 0 auto;
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
@@ -201,11 +208,9 @@ img{
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--light-font-color);
-    border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
 }
+
 
 /*Our proes*/
  
@@ -213,12 +218,14 @@ img{
     display: flex;
     gap: 30px;
 }
+
 .features-item{
     flex-basis: calc((100%-90px)/4);
 }
 
 .our-proes {
     text-transform: uppercase;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: inherit;
     line-height: 1.14;
@@ -242,6 +249,13 @@ img{
     line-height: 1.17;
     color: var(--main-font-color);
 }
+.img-section,
+.team-section{
+    padding-top: 0;
+}
+.team-section{
+    background-color: var(--bgd-secondary-color);
+}
 .images-list{
     display: flex;
     gap: 30px;
@@ -250,9 +264,6 @@ img{
     flex-basis: calc((100%-60px)/3);
 }
 
-.team-fond {
-    background-color: var(--bgd-secondary-color);
-}
 .employee-list{
     display: flex;
     gap: 30px;
@@ -270,7 +281,7 @@ img{
     text-align: center;
 }
 .name {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -302,10 +313,8 @@ img{
     letter-spacing: 0.03em;
     color: var(--main-font-color);
     background-color: var(--bgd-secondary-color);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
 }
+
 .buttons-list{
     margin-bottom: 50px;
     display: flex;
@@ -334,7 +343,7 @@ img{
 }
 
 .example {
-    padding-bottom: 4px;
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -354,27 +363,25 @@ img{
 /*Footer*/
 .footer {
     background-color: var(--bgd-dark-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .accented {
     color: var(--light-font-color);
 }
 .footer-logo {
+    display: inline-block;
+    margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.17;
     color: var(--accent-color);
 }
-.footer-items{
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-.footer-list{
-    margin-top: 20px;
-}
+
 .footer-item:not(:last-child){
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 .address {
     font-family: 'Roboto', sans-serif;
